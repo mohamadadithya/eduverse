@@ -7,6 +7,7 @@
 		countryKeyword: string = 'indonesia';
 
 	export let data;
+	
 	const { countries } = data;
 </script>
 
@@ -29,8 +30,7 @@
 		>
 			{#each countries as country}
 				<option selected={country == countryKeyword} value={country.name.toLowerCase()}
-					>{country.name}</option
-				>
+					>{country.name}</option>
 			{/each}
 		</select>
 	</div>
