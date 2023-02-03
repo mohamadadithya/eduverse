@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	// @ts-nocheck
     import '../app.css'
 	import Container from '../components/Container.svelte';
 	import Header from '../components/Header.svelte';
@@ -6,6 +7,7 @@
 
 <svelte:head>
 	<title>Eduverse</title>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
